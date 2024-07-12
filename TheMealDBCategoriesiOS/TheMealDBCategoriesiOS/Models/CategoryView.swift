@@ -7,52 +7,20 @@
 
 import SwiftUI
 
-@ViewBuilder
-private func rowView(category: Category, proxy: GeometryProxy) -> some View {
-
-    AsyncImage(url: category.thumbnailURL) { phase in
-        if let image = phase.image {
-            VStack {
-                image
-                    .resizable()
-                    .padding(40)
-                    .aspectRatio(contentMode: .fill)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .clipped()
-            }
-        } else if phase.error != nil {
-            Image(systemName: "exclamationmark.octagon.fill")
-                .foregroundStyle(Color.red)
-        } else {
-            ProgressView()
-        }
-
-    }
-    Group {
-        Text(category.name)
-            .font(.title)
-            .fontDesign(.rounded)
-        Text(category.description)
-            .font(.body)
-    }
-    .padding(.horizontal, 30)
-}
-
-
 struct CategoryView: View {
     var viewModel = CategoryViewModel()
     var body: some View {
         NavigationStack {
-            GeometryReader { proxy in
-                ScrollView {
-                    VStack(alignment: .center) {
-                        ForEach(viewModel.categories) {category in
-                            rowView(category: category, proxy: proxy)
-                        }
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20.0) {
+                    ForEach(viewModel.categories) {category in
+                        CategoryRowView(category)
                     }
                 }
             }
+            .padding(.vertical, 20)
         }
+        .navigationTitle("Categories")
     }
 }
 

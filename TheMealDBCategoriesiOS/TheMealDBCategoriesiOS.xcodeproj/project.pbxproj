@@ -16,6 +16,7 @@
 		C86B94B72C13925A00C5B707 /* EndpointRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B94B52C13925A00C5B707 /* EndpointRequestType.swift */; };
 		C86B94B92C13927900C5B707 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B94B82C13927900C5B707 /* CategoryView.swift */; };
 		C86B94BB2C13927D00C5B707 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B94BA2C13927D00C5B707 /* CategoryViewModel.swift */; };
+		C89071F12C41B1800044BCED /* CategoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89071F02C41B1800044BCED /* CategoryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C86B94B52C13925A00C5B707 /* EndpointRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointRequestType.swift; sourceTree = "<group>"; };
 		C86B94B82C13927900C5B707 /* CategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		C86B94BA2C13927D00C5B707 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		C89071F02C41B1800044BCED /* CategoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				C86B94BA2C13927D00C5B707 /* CategoryViewModel.swift */,
 				C86B94B82C13927900C5B707 /* CategoryView.swift */,
+				C89071F02C41B1800044BCED /* CategoryRowView.swift */,
 			);
 			name = Screens;
 			path = Models;
@@ -190,6 +193,7 @@
 				C86B94B02C1391D800C5B707 /* Categories.swift in Sources */,
 				C86B949A2C1391CB00C5B707 /* TheMealDBCategoriesiOSApp.swift in Sources */,
 				C86B94B72C13925A00C5B707 /* EndpointRequestType.swift in Sources */,
+				C89071F12C41B1800044BCED /* CategoryRowView.swift in Sources */,
 				C86B94B12C1391D800C5B707 /* Category.swift in Sources */,
 				C86B94B92C13927900C5B707 /* CategoryView.swift in Sources */,
 			);
