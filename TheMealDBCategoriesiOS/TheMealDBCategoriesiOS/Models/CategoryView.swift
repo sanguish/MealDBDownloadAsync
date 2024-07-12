@@ -17,6 +17,8 @@ struct CategoryView: View {
                         CategoryRowView(category)
                     }
                 }
+            }.task {
+                await viewModel.fetchCategories()
             }
             .padding(.vertical, 20)
         }

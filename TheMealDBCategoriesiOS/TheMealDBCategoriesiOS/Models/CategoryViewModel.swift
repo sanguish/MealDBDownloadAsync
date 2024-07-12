@@ -22,8 +22,6 @@ class CategoryViewModel {
     }
 
     init() {
-        Task {
-            await fetchCategories()
-        }
+        // Do any additional initialization here that doesn't require network interaction
     }
 }
